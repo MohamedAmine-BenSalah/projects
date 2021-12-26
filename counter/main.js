@@ -23,8 +23,14 @@ function decrement(){
 }
 
 function save(){
-   let he =  document.getElementById('demo') 
-    he.innerHTML = localStorage.getItem("number of people")
-    let her = document.getElementById('demotwo');
-    her.innerText = localStorage.getItem('people left')
+   let peopleIn =  document.getElementById('demo') 
+   peopleIn.innerText = localStorage.getItem("number of people")
+    let peopleLeft = document.getElementById('demotwo');
+    peopleLeft.innerText = localStorage.getItem('people left')
+}
+function reset(){
+    let peopleinside = document.getElementById('demo');
+    peopleinside.innerText = 0;
+    let peopleoutside = document.getElementById('demotwo');
+    peopleoutside.innerText = 0;
 }

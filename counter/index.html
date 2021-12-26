@@ -8,7 +8,7 @@
     <script src="main.js" defer ></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="save()">
     <div class="center">   
             <h1>People entered:</h1>
     <h2 id="count-ele"> 0 </h2>
@@ -20,6 +20,8 @@
     <p id="demo"> </p>
     <h4>People left :</h4>
     <p id="demotwo"> </p>
+    <hr>
+    <button class="button" onclick="reset()">Reset!</button>
 </div>
 
 </body>
