@@ -1,2 +1,2 @@
 # projects
-some very simple projects to remeber the basics and advance on the way!
+some very simple projects to remember the basics and advance on the way!
