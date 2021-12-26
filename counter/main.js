@@ -11,11 +11,20 @@ let counter = document.getElementById("count-ele");
 function increment() {
     count++;
   counter.innerText = count;
+  localStorage.setItem("number of people", counter.innerText);
 
 }
 
 function decrement(){
     count--
     counter.innerText = count
+    localStorage.setItem('people left' ,counter.innerText)
     
+}
+
+function save(){
+   let he =  document.getElementById('demo') 
+    he.innerHTML = localStorage.getItem("number of people")
+    let her = document.getElementById('demotwo');
+    her.innerText = localStorage.getItem('people left')
 }
