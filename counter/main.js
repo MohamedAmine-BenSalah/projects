@@ -33,4 +33,7 @@ function reset(){
     peopleinside.innerText = 0;
     let peopleoutside = document.getElementById('demotwo');
     peopleoutside.innerText = 0;
+    let peopleentered = document.getElementById('count-ele');
+    peopleentered.innerText = 0;
+    localStorage.clear();
 }
