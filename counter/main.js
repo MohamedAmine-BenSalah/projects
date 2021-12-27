@@ -26,7 +26,9 @@ function save(){
    let peopleIn =  document.getElementById('demo') 
    peopleIn.innerText = localStorage.getItem("number of people")
     let peopleLeft = document.getElementById('demotwo');
-    peopleLeft.innerText = localStorage.getItem('people left')
+    peopleLeft.innerText = localStorage.getItem('people left');
+    // counter.textContent = 0; if it was a normal counter, we will set it back to 0, but here we are trying to keep track!
+
 }
 function reset(){
     let peopleinside = document.getElementById('demo');
@@ -37,3 +39,9 @@ function reset(){
     peopleentered.innerText = 0;
     localStorage.clear();
 }
+function infos(){
+    let saveEl = document.getElementById('infos');
+    let counted = count  + " - ";
+    saveEl.textContent += counted;
+ // using textContent here because it renders the spaces unlike innerText wish doesn't render non readable  human caracters like a space 
+ }
