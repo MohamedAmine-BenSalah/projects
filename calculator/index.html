@@ -13,15 +13,16 @@
         <h1>Basic Calculator </h1>
         <hr>
         <p > Number A</p>
-        <input type="number">
-        <p>Number B</p>
-       <input type="number">
+        <input id="numA" type="number">
+        <p >Number B</p>
+       <input id="numB" type="number">
       <div>
-          <button>*</button>
-          <button>+</button>
-          <button>/</button>
-          <button>-</button>
+          <button onclick="multiply()">*</button>
+          <button onclick="add()">+</button>
+          <button onclick="divide()">/</button>
+          <button onclick="substract()">-</button>
       </div>
+      <p id="result"></p>
     </div>
     
 </body>
