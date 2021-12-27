@@ -37,6 +37,7 @@ function reset(){
     peopleoutside.innerText = 0;
     let peopleentered = document.getElementById('count-ele');
     peopleentered.innerText = 0;
+    count = 0;
     localStorage.clear();
 }
 function infos(){
