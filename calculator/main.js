@@ -1,6 +1,7 @@
 let inputA = document.getElementById("numA");
 let inputB = document.getElementById("numB");
 let result = document.getElementById("result");
+// for the type input we have to use the .value instead of .innerText or textContent otherwise nothing new basics..basics.
 
 function add() {
   let firstNum = parseInt(inputA.value);
