@@ -12,7 +12,7 @@ function startGame  () {
     renderGame();
 }
 function getRandomCard () {
-    return Math.floor(Math.random()*11)
+    return Math.floor( Math.random()*13 ) + 1
 }
 function renderGame() {
     cardsEl.textContent =  " Cards : " 
@@ -36,8 +36,7 @@ function renderGame() {
 
 }}
 function newCard() {
-    // created a new variable named newCard hardCodded its value to 7 we should now get a blackJack since firstC = 10 and secondC = 4 , however those values should be random
-    // we add the new var to the sum then we call the function that will judge if we won or not.
+    
     let newCard = 7;
     sum+= newCard;
     cardsArray.push(newCard)
