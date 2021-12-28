@@ -60,7 +60,5 @@ function newCard() {
         cardsArray.push(newCard)
         renderGame();
     }
-    // else {
-    //     document.getElementById('message-el').textContent = "try again later!"
-    // }
+  
 }
