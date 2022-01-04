@@ -10,15 +10,15 @@ let addToDo = () => {
     let inputValue = input.value;
     todosArr.push(inputValue);
     input.value = "";
-    localStorage.setItem('todos',JSON.stringify(todos));
+    localStorage.setItem('todos',JSON.stringify(todosArr));
     
-    console.log(todos)
+    console.log(todosArr)
     render(todosArr);
 }
 let parsedTodos = JSON.parse(localStorage.getItem('todos'));
 if(parsedTodos) {
     todos = parsedTodos;
-    render(todosArr);
+    render(parsedTodos);
 }
 
 
@@ -29,7 +29,7 @@ function render (todos) {
     for(let i=0;i<todos.length;i++) {
         output+= `<li>
         
-        ${todos[i]}  <button onclick="deleteFromArr()    ">delete</button>
+        ${todos[i]}  <button onclick="deleteFromArr()    ">Completed!</button>
         
         </li> `
     }
@@ -40,7 +40,8 @@ function render (todos) {
 
 function deleteFromArr() {
     console.log("deleted")
-    todos.pop();
+    todosArr.shift();
+    localStorage.clear();
     render(todosArr);
 }
 
